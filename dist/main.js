@@ -35,12 +35,9 @@ aluno2.vincularTreino(treinoB);
 aluno2.vincularMensalidade(mensalidade2);
 aluno3.vincularTreino(treinoA);
 aluno3.vincularMensalidade(mensalidade3);
-aluno4.vincularTreino(treinoA);
-aluno4.vincularMensalidade(mensalidade3);
 academia.adicionarAluno(aluno1);
 academia.adicionarAluno(aluno2);
 academia.adicionarAluno(aluno3);
-academia.adicionarAluno(aluno4);
 console.log("\n========================================");
 console.log("   SISTEMA DE GERENCIAMENTO DE ACADEMIA ");
 console.log("========================================");
@@ -95,7 +92,7 @@ const pessoas = [instrutor1, instrutor2, aluno1, aluno2, aluno3];
 pessoas.forEach((p) => console.log(p.mostrarDados()));
 separador();
 console.log("\n BUSCA POR MATRÍCULA:\n");
-const encontrado = academia.buscarAlunoPorMatricula("MAT-004");
+const encontrado = academia.buscarAlunoPorMatricula("MAT-002");
 if (encontrado) {
     console.log(`Aluno encontrado: ${encontrado.mostrarDados()}`);
 }
